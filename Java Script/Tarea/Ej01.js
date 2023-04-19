@@ -2,25 +2,14 @@
 // mostrar el cuadrado de cada uno de ellos. 
 // Este proceso debe continuar hasta que se detecte un
 // número negativo en la lista o hasta que se haya recorrido toda la lista.
-
-let listaNumeros = [1, 2, 3, 4, 5];
-
-for (let i = 0; i < listaNumeros.length; i++) {
-let cuadrado = listaNumeros[i] ** 2;
-console.log(cuadrado);
-}
-
-let listaNumeros1 = [-3,5,8,13,25];
-    for (i = 0; i < listaNumeros1.length; i++){
-        if (listaNumeros1[i] < 0){
-            break;
-        }
-
-        let cuadrado = listaNumeros1[i] **2;
- console.log(cuadrado);    
-
-}
-
     
-
-
+//Generar lista de números
+let listaNum = [2, 3, 5, 8, 1, 10];
+//Iicializamos la variable
+let i = 0;
+//Recorremos la lista y calculamos el cuadrado de cada uno de los n´meros de la lista.
+while (i < listaNum.length && listaNum[i] >= 0) {
+  let cuadrado = listaNum[i] * listaNum[i];
+  console.log(cuadrado);
+  i++;
+}
