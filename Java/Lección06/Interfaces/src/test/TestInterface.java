@@ -11,7 +11,7 @@ public class TestInterface {
         datos = new ImplementacionOracle();
         //datos.listar();
         imprimir(datos);
-    }
+    }   
     
     public static void imprimir(IAccesoDatos datos){
         datos.listar();
